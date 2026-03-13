@@ -1,44 +1,19 @@
 numero_secreto = 16
 descobriu = False
 
-if not descobriu:
-    chute_usuario = int(input('Tente adivinhar o número secreto: '))
-    if chute_usuario < numero_secreto:
-        print('Chute abaixo do número secreto ); ')
-    elif chute_usuario > numero_secreto:
-        print('Chute acima do número secreto ); ')
-    else:
-        print('Parabéns você acertou o número da sorte (: ')
-        descobriu = True
-
-if not descobriu:
-    chute_usuario = int(input('Tente adivinhar o número secreto: '))
-    if chute_usuario < numero_secreto:
-        print('Chute abaixo do número secreto ); ')
-    elif chute_usuario > numero_secreto:
-        print('Chute acima do número secreto ); ')
-    else:
-        print('Parabéns você acertou o número da sorte (: ')
-        descobriu = True
-    
-
-if not descobriu:
-    chute_usuario = int(input('Tente adivinhar o número secreto: '))
-    if chute_usuario < numero_secreto:
-        print('Chute abaixo do número secreto ); ')
-    elif chute_usuario > numero_secreto:
-        print('Chute acima do número secreto ); ')
-    else:
-        print('Parabéns você acertou o número da sorte (: ')
-        descobriu = True
-
-
+for n in range(3):
+    if not descobriu:
+        chute = int(input('tente acertar o número secreto: '))
+        if chute < numero_secreto:
+            print('Chute muito abaixo!')
+        elif chute > numero_secreto:
+            print('Chute muito acima!')
+        else:
+            print('Parabéns você acertou!')
+            descobriu = True
 
 if descobriu:
-    print('Parabens você ganhou')
+    print('Parabéns, você acertou o múmero da sorte')
 else:
-    print(f'Que pena você erros as 3 tentativas, o número secreto era {numero_secreto}')
-   
-
-
-
+    print(f'Que pana, você errou as 3 tentativas o numero secreto era {numero_secreto}')
+    
