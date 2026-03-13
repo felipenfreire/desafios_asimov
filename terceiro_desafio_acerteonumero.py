@@ -9,7 +9,7 @@ for n in range(3):
         elif chute > numero_secreto:
             print('Chute muito acima!')
         else:
-            print('Parabéns você acertou!')
+            print('Descobriu!')
             descobriu = True
 
 if descobriu:
